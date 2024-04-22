@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Bot;
+namespace App\Http\Controllers\Telegram;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
@@ -10,7 +10,7 @@ use App\Services\Telegram\Input\{Chat, Message, User};
 use App\Services\Telegram\Internal\TelegramBotServiceInterface;
 
 
-class TelegramController extends Controller
+class BotController extends Controller
 {
     public function __construct(private TelegramBotServiceInterface $telegramBotService)
     {

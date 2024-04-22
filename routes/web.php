@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::group(['prefix' => 'bot'], function () {
     Route::group(['prefix' => 'telegram'], function () {
-        Route::post('/get-action', [App\Http\Controllers\Bot\TelegramController::class, 'getAction']);
+        Route::post('/get-action', [App\Http\Controllers\Telegram\BotController::class, 'getAction']);
     });
 });
 
